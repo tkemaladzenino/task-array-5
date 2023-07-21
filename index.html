@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="text/javascript" src="./JS/script.js"></script>
+    <title>array-5</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="tit">
+                <img src="./images/menu.png">
+                <img src="./images/Crowdfund..png">
+            </div>
+            <div class="rightPart">
+                <div class="img-div">
+                    <img src="./images/Userpic.png">
+                </div>
+                <p id="demo"></p>
+                <div class="dropdown">
+                    <img src="./images/Shape.png">
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="maindiv">
+            <div class="array-div" id="arraydiv">
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p id="footer-first-part">© 2019 crowdfund. All Rights Reserved</p>
+            <p id="demo1"></p>
+            <p id="foofer-central-part"></p>
+            <p id="svg-icons"></p>
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+
+    const myArr = [
+        { name: "Kate", fullName: 'B.' },
+    ];
+
+    myArr.forEach(myFunction);
+    function myFunction(value) {
+        document.getElementById("demo").innerHTML = value.name + " ";
+        document.getElementById("demo").style.color = "#1B1B1B";
+        document.getElementById("demo").style.fontSize = "18px";
+    }
+
+
+    window.addEventListener('DOMContentLoaded', function () {
+        var masivi = [
+            {
+                image: "images/image1.png",
+                title: "Headset",
+                subtitle: "Fidelity first. See more than ever before",
+                description: "We've pushed visual, audio, and ergonomic technologies to create the best-in-class VR experience.",
+                commentCount: "",
+                showCount: "",
+                shereLink: ""
+            },
+            {
+                image: "images/image2.png",
+                title: "Controllers",
+                subtitle: "Your hands, in Virtual Reality",
+                description: "Designed from the ground up to enable natural interactions, high-fidelity hand presence, and long-term comfort.",
+                commentCount: "",
+                showCount: "",
+                shereLink: ""
+            },
+            {
+                image: "images/image3.png",
+                title: "Base Stations",
+                subtitle: "Best-in-industry room-scale tracking",
+                description: "The highest quality tracking has gotten even better with Base Station 2.0, now with improved range, field of view, and scalability.",
+                commentCount: "",
+                showCount: "",
+                shereLink: ""
+            },
+        ];
+        var arrayDiv = document.getElementById("arraydiv");
+
+        masivi.forEach(function (element) {
+            var card = document.createElement("div");
+
+            card.classList.add("card", "headset-card");
+
+            var cardBody = document.createElement('div');
+            cardBody.classList.add('card-body');
+
+
+
+
+            var titleElement = document.createElement('h5');
+            titleElement.classList.add('headset');
+            titleElement.textContent = element.title;
+
+            var subtitleElement = document.createElement("h1");
+            subtitleElement.classList.add("subtitle-fidelity");
+            subtitleElement.textContent = element.subtitle;
+
+
+            var imageElement = document.createElement('img');
+            imageElement.src = element.image;
+
+
+
+
+            var descriptionElement = document.createElement('p');
+            descriptionElement.classList.add('p-description');
+            descriptionElement.textContent = element.description;
+
+            var arrayDivSmall = document.createElement("div");
+            arrayDivSmall.classList.add("flex-div-small");
+
+            var hr = document.createElement("hr");
+            hr.classList.add("hr1");
+
+
+
+
+
+
+
+
+            var euroElement = document.createElement("span");
+            euroElement.classList.add("euro");
+            euroElement.textContent = element.euro;
+
+            var priceDescriptionElement = document.createElement("p");
+            priceDescriptionElement.classList.add("p-pay");
+            priceDescriptionElement.textContent = element.priceDescription;
+
+
+
+
+            cardBody.appendChild(imageElement);
+            cardBody.appendChild(titleElement);
+            arrayDivSmall.appendChild(descriptionElement);
+            cardBody.appendChild(subtitleElement);
+            cardBody.appendChild(arrayDivSmall);
+            cardBody.appendChild(hr);
+
+
+
+            subtitleElement.appendChild(euroElement);
+            arrayDivSmall.appendChild(priceDescriptionElement);
+
+
+
+            card.appendChild(cardBody);
+
+            arrayDiv.appendChild(card);
+        });
+    });
+
+
+
+
+
+
+
+    const myarr = [
+        "CONTACT", "HELP", "PRIVACY POLICY", "TERMS OF USE"
+    ];
+
+
+
+
+
+</script>
+
+</html>
