@@ -72,40 +72,46 @@
                 title: "Headset",
                 subtitle: "Fidelity first. See more than ever before",
                 description: "We've pushed visual, audio, and ergonomic technologies to create the best-in-class VR experience.",
-                commentCount: "",
-                showCount: "",
-                shereLink: ""
+                commentCount: "images/Icon1.png",
+                num349: "349",
+                showCount: "images/Icon2.png",
+                num49500: "49500",
+                shareLink: "images/Icon3.png"
             },
             {
                 image: "images/image2.png",
                 title: "Controllers",
                 subtitle: "Your hands, in Virtual Reality",
                 description: "Designed from the ground up to enable natural interactions, high-fidelity hand presence, and long-term comfort.",
-                commentCount: "",
-                showCount: "",
-                shereLink: ""
+                commentCount: "images/Icon4.png",
+                num349: "349",
+                showCount: "images/Icon5.png",
+                num49500: "49500",
+                shareLink: "images/Icon6.png"
             },
             {
                 image: "images/image3.png",
                 title: "Base Stations",
                 subtitle: "Best-in-industry room-scale tracking",
                 description: "The highest quality tracking has gotten even better with Base Station 2.0, now with improved range, field of view, and scalability.",
-                commentCount: "",
-                showCount: "",
-                shereLink: ""
+                commentCount: "images/Icon1.png",
+                num349: "349",
+                showCount: "images/Icon2.png",
+                num49500: "49500",
+                shareLink: "images/Icon3.png"
             },
         ];
-        var arrayDiv = document.getElementById("arraydiv");
+
 
         masivi.forEach(function (element) {
-            var card = document.createElement("div");
 
+            var arrayDiv = document.getElementById("arraydiv");
+
+            var card = document.createElement("div");
             card.classList.add("card", "headset-card");
 
             var cardBody = document.createElement('div');
             cardBody.classList.add('card-body');
-
-
 
 
             var titleElement = document.createElement('h5');
@@ -116,12 +122,8 @@
             subtitleElement.classList.add("subtitle-fidelity");
             subtitleElement.textContent = element.subtitle;
 
-
             var imageElement = document.createElement('img');
             imageElement.src = element.image;
-
-
-
 
             var descriptionElement = document.createElement('p');
             descriptionElement.classList.add('p-description');
@@ -133,20 +135,27 @@
             var hr = document.createElement("hr");
             hr.classList.add("hr1");
 
+            var imageSmall = document.createElement("div");
+            imageSmall.classList.add("imgsmall-div");
+
+            var commentCountElement = document.createElement("div1");
+            var commentCountElement = document.createElement("img");
+            commentCountElement.src = element.commentCount;
+
+            var num349Element = document.createElement("p");
+            num349Element.classList.add("num349");
+            num349Element.textContent = element.num349;
+
+            var showCountElement = document.createElement("img");
+            showCountElement.src = element.showCount;
 
 
+            var num49500Element = document.createElement("p");
+            num49500Element.classList.add("num49500");
+            num49500Element.textContent = element.num49500;
 
-
-
-
-
-            var euroElement = document.createElement("span");
-            euroElement.classList.add("euro");
-            euroElement.textContent = element.euro;
-
-            var priceDescriptionElement = document.createElement("p");
-            priceDescriptionElement.classList.add("p-pay");
-            priceDescriptionElement.textContent = element.priceDescription;
+            var shareLinkElement = document.createElement("img");
+            shareLinkElement.src = element.shareLink;
 
 
 
@@ -157,16 +166,17 @@
             cardBody.appendChild(subtitleElement);
             cardBody.appendChild(arrayDivSmall);
             cardBody.appendChild(hr);
+            cardBody.appendChild(imageSmall);
+            imageSmall.appendChild(commentCountElement);
+            imageSmall.appendChild(num349Element);
+            imageSmall.appendChild(showCountElement);
+            imageSmall.appendChild(num49500Element);
 
-
-
-            subtitleElement.appendChild(euroElement);
-            arrayDivSmall.appendChild(priceDescriptionElement);
+            imageSmall.appendChild(shareLinkElement);
 
 
 
             card.appendChild(cardBody);
-
             arrayDiv.appendChild(card);
         });
     });

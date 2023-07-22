@@ -152,19 +152,18 @@ body {
 
 .card:nth-child(1) .p-description {
 
-    margin-top: 0px;
+    margin-top: 30px;
 
 }
 
 .card:nth-child(2) .p-description {
     color: #FFFFFF;
-    margin-top: 37px;
+    margin-top: 70px;
 
 }
 
 .card:nth-child(3) .p-description {
-
-    margin-top: 0px;
+    margin-top: 30px;
 
 }
 
@@ -175,7 +174,6 @@ body {
     margin-top: 20px;
 
 }
-
 
 .hr1:nth-child(1),
 .hr1:nth-child(3) {
@@ -199,53 +197,60 @@ body {
     margin-top: 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.flex-div-small {
+.imgsmall-div {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 19.77px;
+    flex-direction: row;
+    margin-left: 20px;
 }
 
+.imgsmall-div img {
+    width: 20px;
+    height: 20px;
 
+}
 
-.p-pay {
-    color: #86939E;
+.num349 {
     font-family: Roboto;
-    font-size: 11.532px;
-    font-style: normal;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 16.475px;
-    margin: 0;
-    margin-left: 23px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #9B9B9B;
+    padding-left: 7px;
 }
 
 
+.imgsmall-div img:nth-child(3) {
+    width: 20px;
+    height: 10px;
+    margin-left: 20px;
 
+}
 
-
-.euro {
-    color: #50555B;
+.num49500 {
     font-family: Roboto;
-    font-size: 22.241px;
-    font-style: normal;
+    font-size: 14px;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.854px;
-
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #9B9B9B;
+    padding-left: 7px;
 }
+
+.imgsmall-div img:nth-child(5) {
+    width: 20px;
+    height: 20px;
+    margin-left: 170px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -268,5 +273,7 @@ body {
     font-family: Roboto;
     color: black;
 }
+
+
 
 /* ------------------  end  footer --------------------------*/
