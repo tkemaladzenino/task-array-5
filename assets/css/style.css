@@ -244,34 +244,42 @@ body {
     margin-left: 170px;
 }
 
-
-
-
-
-
-
-
-
-
+.div2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
 
 
 /* ------------------    footer --------------------------*/
 
-.footer {
+#footer {
     height: 80px;
     padding-left: 40px;
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 60px;
     padding-bottom: 20px;
     padding-top: 40px;
-
 }
 
-#footer-first-part {
+a {
+    text-decoration: none;
     font-family: Roboto;
     color: black;
+    padding-right: 20px;
+}
+
+#footer :nth-child(4) {
+    padding-right: 300px;
+}
+
+#footer :nth-child(5),
+#footer :nth-child(6) {
+    padding-right: 10px;
+
 }
 
 

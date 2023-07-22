@@ -39,19 +39,17 @@
             </div>
         </div>
 
-        <div class="footer">
-            <p id="footer-first-part">© 2019 crowdfund. All Rights Reserved</p>
-            <p id="demo1"></p>
-            <p id="foofer-central-part"></p>
-            <p id="svg-icons"></p>
+        <div class="div2 ">
+            <img src="./images/Slider dots.png">
+        </div>
 
+        <div class="foot" id="footer">
         </div>
     </div>
 
 </body>
 
 <script>
-
 
     const myArr = [
         { name: "Kate", fullName: 'B.' },
@@ -81,7 +79,7 @@
             {
                 image: "images/image2.png",
                 title: "Controllers",
-                subtitle: "Your hands, in Virtual Reality",
+                subtitle: "Your hands,  in Virtual Reality",
                 description: "Designed from the ground up to enable natural interactions, high-fidelity hand presence, and long-term comfort.",
                 commentCount: "images/Icon4.png",
                 num349: "349",
@@ -149,16 +147,12 @@
             var showCountElement = document.createElement("img");
             showCountElement.src = element.showCount;
 
-
             var num49500Element = document.createElement("p");
             num49500Element.classList.add("num49500");
             num49500Element.textContent = element.num49500;
 
             var shareLinkElement = document.createElement("img");
             shareLinkElement.src = element.shareLink;
-
-
-
 
             cardBody.appendChild(imageElement);
             cardBody.appendChild(titleElement);
@@ -171,10 +165,7 @@
             imageSmall.appendChild(num349Element);
             imageSmall.appendChild(showCountElement);
             imageSmall.appendChild(num49500Element);
-
             imageSmall.appendChild(shareLinkElement);
-
-
 
             card.appendChild(cardBody);
             arrayDiv.appendChild(card);
@@ -182,16 +173,42 @@
     });
 
 
+    const wordsArray = ['CONTACT', 'HALP', 'PRIVACY POLACY', 'TERMS OF USER'];
+    const imageArray = ['Twitter.png', 'facebook.png', 'YouTube.png'];
+
+    function createFooter() {
+        const footerDiv = document.getElementById('footer');
+        const ninoElement = document.createElement('div');
+        ninoElement.textContent = '© 2019 crowdfund. All Rights Reserved';
+        footerDiv.appendChild(ninoElement);
+
+        const containerDiv = document.createElement('div');
 
 
+        wordsArray.forEach((word) => {
+            const wordElement = document.createElement('a');
+            wordElement.textContent = word;
+
+            wordElement.href = 'https://www.google.com/';
+            containerDiv.appendChild(wordElement);
+        });
 
 
+        imageArray.forEach((filename) => {
+            const imageElement = document.createElement('img');
+            imageElement.src = 'images/' + filename;
+            containerDiv.appendChild(imageElement);
+        });
+        footerDiv.appendChild(containerDiv);
+    }
 
-    const myarr = [
-        "CONTACT", "HELP", "PRIVACY POLICY", "TERMS OF USE"
-    ];
+    createFooter();
 
 
+</script>
+</body>
+
+</html>
 
 
 
