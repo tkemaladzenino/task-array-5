@@ -147,6 +147,7 @@ body {
     text-align: left;
     color: #9B9B9B;
     padding-left: 24px;
+    padding-right: 24px;
 
 }
 
@@ -190,6 +191,10 @@ body {
 
 .flex-div-small:nth-child(3) {
     margin-top: 0px;
+}
+
+.p-description:nth-child(2) {
+    color: rgb(128, 128, 128);
 }
 
 .imgsmall-div {

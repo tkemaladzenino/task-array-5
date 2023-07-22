@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function () {
         {
             image: "images/image2.png",
             title: "Controllers",
-            subtitle: "Your hands,  in Virtual Reality",
+            subtitle: "Your hands ,  in Virtual Reality",
             description: "Designed from the ground up to enable natural interactions, high-fidelity hand presence, and long-term comfort.",
             commentCount: "images/Icon4.png",
             num349: "349",
