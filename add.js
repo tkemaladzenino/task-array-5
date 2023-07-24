@@ -148,6 +148,12 @@ function createFooter() {
         const imageElement = document.createElement('img');
         imageElement.src = 'images/' + filename;
         containerDiv.appendChild(imageElement);
+
+        const imgLink = document.createElement('a');
+        imgLink.href = 'http://google.com';
+        imgLink.appendChild(imageElement);
+
+        containerDiv.appendChild(imgLink);
     });
     footerDiv.appendChild(containerDiv);
 }
